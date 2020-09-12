@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wasm Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="row">
+        <h1>Rust + WebAssembly</h1>
+      </div>
+      <div class="row">
+        <div>
+          <label>Numero 1:</label>
+          <input class="form-control" type="number" v-model="a" />
+        </div>
+        <div>
+          <label>Numero 2:</label>
+          <input class="form-control" type="number" v-model="b" />
+        </div>
+      </div>
+      <div class="row pt-3">
+        <label>Resultado: </label>
+        <span class="pl-2">{{result}}</span>
+      </div>
+      <div class="row">
+        <h3>Operaciones</h3>
+      </div>
+      <div class="row">
+        <div>
+          <button type="button" class="btn btn-primary" @click="sumar">
+            Sumar
+          </button>
+          <button type="button" class="btn btn-primary" @click="resta">
+            Restar
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
