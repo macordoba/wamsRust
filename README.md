@@ -1,13 +1,4 @@
 # WebAssembly con Rust
-## Proceso de preparación
-
-```mermaid
-graph LR 
-A[Instalar wasm-pack]-->B[Compilar a WebAssamble];
-B-->C[Copy file .wasm];
-C-->D[Install package nodeJS];
-D-->E[Start the server];
-```
 ## Comandos
 1. Install de compiler from Rust to WebAssembly
 ```
